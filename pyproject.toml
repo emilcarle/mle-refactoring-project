@@ -16,3 +16,7 @@ dev = [
     "ipykernel>=7.3.0",
     "nbformat>=5.11.1",
 ]
+
+[[tool.mypy.overrides]]
+module = ["seaborn.*", "plotly.*", "skops.*", "sklearn.*"]
+ignore_missing_imports = true
